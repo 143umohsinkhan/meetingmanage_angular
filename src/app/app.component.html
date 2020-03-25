@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a style='text-decoration: none;' [routerLink]='["/list"]'>
+      <h1>My Meetings </h1>
+    </a>
+    <button mat-button *ngIf="userData.isLoggedIn" (click)=logout()>Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
